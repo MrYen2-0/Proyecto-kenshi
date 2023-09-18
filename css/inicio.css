@@ -1,0 +1,613 @@
+body {
+    background-image: url('/src/img/Wiki-background.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+}
+
+.cuadritos-navegacion {
+    margin-top: 10px; /* Ajusta la separación entre el título y los cuadros */
+}
+
+
+.titulo-scrollbox{
+    width: auto;
+    height: auto;
+    padding-bottom: 10px; /* Espacio interno alrededor del enlace */
+}
+
+#scrollBox {
+    position: fixed;
+    top: 0;
+    left: 66px;
+    width: 100%;
+    height: 0;
+    background-color: rgb(87, 87, 87); /* Color gris con opacidad */
+    opacity: 0; /* Inicialmente, el cuadro es invisible */
+    transition: height 0s, opacity 0.1s; /* Transición suave */
+    z-index: 999; /* Coloca el cuadro por encima de todo */
+}
+
+
+.cuadro-vertical {
+    background-color: rgb(24, 15, 29); 
+    color: white; 
+    width: 66px; 
+    height: 100%; 
+    position: fixed; /* Fija el cuadro en la página */
+    top: 0; /* Alinea el cuadro en la parte superior */
+    left: 0; /* Alinea el cuadro a la izquierda */
+}
+
+.contendor-global {
+    margin-left: 65px; /* Agrega un espacio a la izquierda de la imagen */
+}
+
+.contenido-globalmenu {
+    width: 1217px;
+    height: auto;
+    background-color: rgb(57, 50, 43);
+}
+
+.contenido-menu{
+    margin-left: 250px;
+    margin-right: 298px;
+
+}
+
+.cuadro {
+    width: 100%;
+    height: auto;
+    background-color: rgb(57, 50, 43);
+    text-align: center;
+    padding-left: 20px;
+
+}
+
+.inicio-sesion-header {
+    margin: 0% 92%;
+
+    padding-top: 20PX;
+    width: 170px;
+    top: 10px; /* Ajusta la distancia desde la parte superior */
+    right: 10px; /* Ajusta la distancia desde la derecha */
+    display: flex; /* Utiliza flexbox para centrar los elementos */
+    
+
+}
+
+.sesion {
+    border: 1px solid white; /* Bordes blancos */
+    background: transparent; /* Fondo transparente */
+    color: white; /* Texto blanco */
+    padding: 5px 10px; /* Espacio interno alrededor del enlace */
+    margin-right: 10px; /* Espacio a la derecha del enlace "Sing in" */
+    text-decoration: none; /* Elimina subrayado */
+}
+
+.registro {
+    background: rgb(130, 120, 120); /* Fondo marrón */
+    color: white; /* Texto blanco */
+    padding: 5px 10px; /* Espacio interno alrededor del enlace */
+    text-decoration: none; /* Elimina subrayado */
+}
+
+
+.contenedor-imagen-header {
+    display: flex; /* Hace que los elementos se muestren en línea uno al lado del otro */
+    align-items: center; /* Alinea verticalmente los elementos al centro */
+    vertical-align: baseline;
+
+}
+
+.titulo{
+    width: auto;
+    height: auto;
+    padding: 5px; /* Espacio interno alrededor del enlace */
+
+}
+
+a.titulo{
+    vertical-align: baseline;
+}
+/* Estilo del enlace */
+.titulo-header {
+    
+    text-decoration: none; /* Elimina el subrayado */
+    color:white; /* Color del texto del enlace */
+
+}
+
+.titulo-header:hover {
+    color: rgb(150, 150, 150); /* Cambia el color al mismo color del texto */
+}
+
+
+.container-header {
+ width: 100%;
+ height: auto;
+
+}
+
+.imagen-header {
+    float: center; /* Hace que la imagen flote a la izquierda */
+    margin-right: 0px; /* Agrega un espacio a la derecha de la imagen */
+    width: 155px;
+    height: auto;
+    margin: 0 0%;
+    margin-right: 25px; /* Espacio entre elementos del menú */
+
+
+}
+
+.imagen-izquierda{
+    float: center; /* Hace que la imagen flote a la izquierda */
+    width: 100%;
+    height: auto;
+
+}
+
+.nav-navegador {
+    list-style: none;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 10px;
+    display: flex; /* Hace que los elementos de la lista se muestren en línea */
+}
+
+.nav-navegador-horizontal {
+    margin-right: 25px; /* Espacio entre elementos del menú */
+}
+
+.nav-navegador-horizontal span {
+    color: white; /* Color del texto blanco */
+    font-size: 18px; /* Tamaño de fuente */
+    text-decoration: none; /* Elimina subrayado en los enlaces */
+    padding: 10px; /* Espacio interno alrededor del texto */
+}
+
+
+.titulo-cuadro {
+    padding-bottom: 2%; /* Agrega un espacio a la derecha de la imagen */
+
+}
+
+.centro-imagen{
+    width: 100%;
+    height: 25%;
+
+}
+
+.centro-imagen img{
+    width: 660px;
+    height: 210px;
+}
+
+.cuadro h1 {
+    color: white;
+}
+
+.bienvenida-cuadro {
+    border: 2px solid rgb(98, 64, 0); /* Bordado de color naranja */
+    background-color: rgb(62, 57, 53);
+    padding: 20px; /* Espaciado interior */
+    margin-top: 20px; /* Espaciado superior */
+    margin-bottom: 20px; /* Espaciado inferior */
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2); /* Sombra del cuadro */
+
+}
+
+.bienvenida-welcome {
+    display: flex;
+    align-items: center; /* Centra verticalmente los elementos */
+    margin-left: 210px; /* Ajusta el espacio entre el título y la imagen */
+
+}
+
+.bienvenida-welcome h1 {
+    margin-right: 20px; /* Ajusta el espacio entre el título y la imagen */
+    margin-left: 20px; /* Ajusta el espacio entre el título y la imagen */
+
+}
+
+
+.welcome-texto {
+    font-size: 18px; /* Tamaño de fuente */
+    color: rgb(253, 234, 210);
+
+}
+
+.imagen-cuadro {
+    text-align: center;
+}
+
+.bienvenida-imagen {
+    overflow: hidden;
+}
+
+.gallery {
+    display: flex;
+    transition: transform 0s ease-in-out;
+}
+
+.slide {
+    min-width: 100%;
+}
+
+.slide img {
+    max-width: 100%;
+    height: auto;
+}
+
+.box-linea{
+text-align: center; 
+font-size: 125%;
+}
+
+.comillas-table{
+    width:20px; 
+    font-size:36px; 
+    font-family:'Times New Roman', serif; 
+    font-weight:bold; 
+    text-align:left; 
+    padding:3px; 
+    vertical-align: top;
+}
+
+a.external.text {
+    text-decoration: none; /* Quita la línea subrayada */
+    color: rgb(253, 234, 210);
+}
+
+.table-cuadro {
+    background-color: var(--theme-page-background-color);
+    border: 2px solid #000000;
+    margin: auto;
+    padding: 5px;
+    width: 100%;
+    flex-direction: column; /* Alinea los elementos verticalmente */
+
+}
+
+.table-titulo {
+    text-align: center; 
+    font-size: 125%; 
+    font-weight: bold; 
+    text-transform: uppercase;
+    color: white; /* Establece el color del texto en blanco */
+    padding: 5px;
+}
+
+.table-texto {
+    color: white; /* Establece el color del texto en blanco */
+    border-top: 2px solid black; 
+    padding: 5px;
+}
+
+.box-cuadro {
+    background-color: var(--theme-page-background-color);
+    border: 2px solid #000000;
+    margin: auto;
+    padding: 5px;
+    width: 100%;
+
+}
+
+.box-titulo {
+    text-align: center; 
+    font-size: 125%; 
+    font-weight: bold; 
+    text-transform: uppercase;
+    color: white; /* Establece el color del texto en blanco */
+}
+
+.box-texto {
+    color: white; /* Establece el color del texto en blanco */
+    border-top: 2px solid black; 
+    padding: 5px;
+}
+
+.box-texto p {
+    margin-bottom: 20px; /* Añade un espacio inferior entre párrafos */
+}
+
+.box-video {
+    border-top: 2px solid black; 
+    padding: 5px;
+}
+
+.box-video-cuadro{
+    padding-left: 90px;
+}
+
+.box-idioma{
+    color: rgb(125, 102, 72); /* Color del texto (amarillo en este caso) */
+    text-decoration: none; /* Elimina el subrayado predeterminado */
+
+
+}
+
+.container-footermenu {
+    padding: 30px;
+}
+
+.limited-footermenu h1{
+    color: white; /* Establece el color del texto en blanco */
+    padding: 0px;
+    margin-top: 0px;
+    margin-bottom: 20px;
+}
+
+.mosaico-footermenu {
+    display: flex; /* Utiliza flexbox para crear columnas */
+}
+
+.columna-footer-menu {
+    flex: 1; /* Distribuye el espacio disponible entre las 3 columnas */
+    padding: 0px; /* Agrega espacio interior a cada columna (ajusta según sea necesario) */
+    background-color: rgb(81, 71, 61);
+}
+
+.columna-page-menu {
+    position: relative;
+
+    height: 236px; /* Altura del div (ajusta según tus preferencias) */
+    width: 262px;
+    margin-bottom: 10px; /* Espacio inferior entre los divs (ajusta según tus preferencias) */
+    border: 1px solid #917b66; /* Borde para cada columna (ajusta según tus preferencias) */
+
+}
+
+.columna-imagen-menu {
+    height: 236px; /* Altura del div (ajusta según tus preferencias) */
+    width: 262px;
+    margin-bottom: 10px; /* Espacio inferior entre los divs (ajusta según tus preferencias) */
+    border: 1px solid #917b66; /* Borde para cada columna (ajusta según tus preferencias) */
+    overflow: hidden;
+    position: relative;
+}
+
+.imagen-menu-contenedor {
+    height: 236px; /* Altura del div (ajusta según tus preferencias) */
+    width: 262px;
+}
+
+.texto-imagen {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Fondo con opacidad */
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0; /* Inicialmente oculto */
+    transition: opacity 0.3s; /* Transición de opacidad para efecto de aparición */
+}
+
+.texto-imagen h2,
+.texto-imagen p {
+    margin: 0;
+    padding: 10px;
+}
+
+.imagen-menu-contenedor2:hover .texto-imagen {
+    opacity: 1; /* Mostrar texto al pasar el ratón sobre la imagen */
+}
+
+
+.footer-menu {
+    background-color: rgb(81, 71, 61);
+    width: 1020px; /* Ancho del cuadro */
+
+
+}
+
+.kenshi-wiki{
+    width:222px;
+    height: 23px;
+    background-color: #7d7065;
+    color: white; /* Establece el color del texto en blanco */
+    padding-inline: 20px; /* Ajusta el valor de padding según tus preferencias */
+    padding-block: 20px; /* Ajusta el valor de padding según tus preferencias */
+    font-size: 20px; /* Cambia el valor a tu preferencia, por ejemplo, 20px para texto más grande */
+
+}
+
+.lista-wiki {
+    background-color: #322d2a; /* Fondo gris */
+    color: black; /* Texto negro */
+    margin: 0px; /* Margen de 10px en todos los lados del ul */
+    padding: 0; /* Eliminar el espacio interno predeterminado */
+    height: 173px;
+
+}
+
+.lista-wiki .wiki-list {
+    list-style: none; /* Eliminar las viñetas */
+    border-bottom: 1px solid black; /* Borde inferior negro para cada elemento de la lista */
+}
+
+.lista-wiki .wiki-article {
+    text-decoration: none; /* Eliminar el subrayado de los enlaces */
+    display: block; /* Hacer que los enlaces ocupen todo el ancho del contenedor li */
+    padding: 19px; /* Espaciado interno alrededor de cada enlace */
+}
+
+.lista-wiki .wiki-circule {
+    display: inline-block; /* Hacer que el círculo sea un elemento en línea */
+    width: 20px; /* Ancho del círculo */
+    height: 20px; /* Altura del círculo */
+    background-color: gray; /* Fondo negro para el círculo */
+    color: white; /* Texto blanco dentro del círculo */
+    border-radius: 50%; /* Hacer que el elemento sea un círculo */
+    text-align: center; /* Alinear el texto al centro del círculo */
+    line-height: 20px; /* Alinear verticalmente el texto en el centro del círculo */
+    margin-right: 10px; /* Espacio a la derecha del círculo */
+}
+
+.lista-wiki .wiki-tittle {
+    font-weight: bold; /* Texto en negrita */
+    color: white; /* Texto blanco dentro del círculo */
+
+}
+
+
+.cuadro-header {
+    background-color: rgb(57, 50, 43);
+    padding: 10px;
+    text-align: left; /* Alinea el texto a la izquierda */
+    width: 69%;
+    
+
+}
+
+.cuadro-header h1 {
+    margin: 0; /* Elimina el margen para que esté pegado a la izquierda */
+    color: white;
+}
+
+footer {
+    text-align: center;
+    color: white;
+    padding-top: 2%; /* Agrega un espacio a la derecha de la imagen */
+
+}
+.container-footer {
+    background-color: rgb(43, 0, 43);
+    width: 100%; /* Ancho del cuadro */
+    height: 100%; /* Toma toda la altura de la página */
+}
+
+.footer-copyright {
+    margin-left: 200px; /* Elimina el margen para que esté pegado a la izquierda */
+    margin-right: 200px; /* Elimina el margen para que esté pegado a la izquierda */
+    padding-top: 55px;
+    padding-bottom: 35px;
+    display: flex; /* Utiliza flexbox para alinear los elementos horizontalmente */
+
+}
+
+.explore-titulo {
+    text-align: left; /* Alinea el texto a la izquierda */
+    font-size: 14px; /* Tamaño de fuente para el elemento 1 */
+    width: 180px;
+
+
+}
+
+.imagen-fandom {
+    width: 180px;
+    height: 45px;
+}
+
+ul {
+    list-style: none; /* Elimina las viñetas */
+    padding: 0; /* Elimina el espacio interior predeterminado de la lista */
+}
+
+li.explore-links {
+    padding-left: 0; /* Elimina el espacio a la izquierda de los elementos */
+    margin-bottom: 10px; /* Espaciado inferior entre elementos */
+}
+
+.explore-link {
+    text-decoration: none; /* Elimina el subrayado predeterminado */
+    color: yellow; /* Color del texto (amarillo en este caso) */
+    padding: 5px 0; /* Espaciado interior */
+    display: block; /* Convierte los enlaces en bloques para ocupar todo el ancho del div */
+    text-align: left; /* Alinea el texto a la izquierda */
+    font-size: 14px; /* Tamaño de fuente para el elemento 1 */
+
+}
+
+.explore-link:hover {
+    color: white; /* Cambia el color del texto al pasar el mouse (rojo en este caso) */
+}
+
+.follow-titulo{
+    text-align: left; /* Alinea el texto a la izquierda */
+
+}
+
+.follow-links {
+    list-style: none; /* Elimina las viñetas */
+    padding: 0; /* Elimina el espacio interior predeterminado de la lista */
+    display: flex; /* Utiliza flexbox para alinear los elementos horizontalmente */
+}
+
+.icon-footer {
+    text-decoration: none; /* Elimina el subrayado predeterminado de los enlaces */
+    display: block; /* Convierte los enlaces en bloques para ocupar todo el ancho del contenedor */
+    text-align: center; /* Alinea el texto al centro (opcional) */
+    
+}
+
+.follow-iconos {
+    width: 40px; /* Ancho de los íconos (ajusta según sea necesario) */
+    height: 40px; /* Altura de los íconos (ajusta según sea necesario) */
+}
+
+.icono-apps {
+    width: 200px; /* Ancho de los íconos (ajusta según sea necesario) */
+    height: 100px; /* Altura de los íconos (ajusta según sea necesario) */
+}
+
+#contenerdor-advertise{
+    margin-top: 60px; /* Espaciado inferior entre elementos */
+
+}
+
+#contenerdor-fandom-apps{
+    text-align: left; /* Alinea el texto a la izquierda */
+
+}
+
+#contenerdor-iconsfandom {
+    display: flex; /* Utiliza flexbox para alinear elementos horizontalmente */
+    align-items: center; /* Alinea verticalmente los elementos al centro */
+}
+
+#contenerdor-iconsfandom img {
+    width: 80px; /* Ancho del logo de la aplicación Fandom (ajusta según sea necesario) */
+    height: auto; /* Altura automática para mantener la proporción */
+    margin-right: 10px; /* Espacio a la derecha del logo */
+}
+
+#contenerdor-iconsfandom ul {
+    display: flex; /* Utiliza flexbox para alinear las imágenes verticalmente */
+    flex-direction: column; /* Apila las imágenes verticalmente */
+    list-style: none; /* Elimina las viñetas de la lista */
+}
+
+#contenerdor-iconsfandom ul li {
+    margin-bottom: 0px; /* Espaciado inferior entre las imágenes */
+}
+
+#contenerdor-iconsfandom ul li img {
+    width: 119px; /* Ancho de las imágenes de App Store y Google Play (ajusta según sea necesario) */
+    height: auto; /* Altura automática para mantener la proporción */
+}
+
+
+.copy{
+    width: 30%; /* Ancho del cuadro */
+    height: 20%;
+    margin-right: 60px; /* Espacio a la derecha de cada elemento (ajusta según sea necesario) */
+    margin-bottom: 0px; /* Espacio hacia abajo de cada elemento (ajusta según sea necesario) */
+}
+
+
+
+.div-izquierdo, .div-derecho {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid gray;
+    background: rgb(0, 0, 0); /* Fondo marrón */
+
+}
