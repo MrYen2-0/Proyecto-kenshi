@@ -1,0 +1,569 @@
+body {
+    background-image: url('/img/Wiki-background.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.cuadritos-navegacion {
+    margin-top: 10px;
+}
+
+.titulo-scrollbox {
+    width: auto;
+    height: auto;
+    padding-bottom: 10px;
+}
+
+#scrollBox {
+    position: fixed;
+    top: 0;
+    left: 66px;
+    width: 100%;
+    height: 0;
+    background-color: rgb(87, 87, 87);
+    opacity: 0;
+    transition: height 0s, opacity 0.1s;
+    z-index: 999;
+}
+
+.cuadro-vertical {
+    background-color: #1e0c1b;
+    color: white;
+    width: 66px;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.contendor-global {
+    margin-left: 65px;
+}
+
+.contenido-globalmenu {
+    width: 80%;
+    height: auto;
+    background-color: rgb(57, 50, 43);
+}
+
+.contenido-menu {
+    margin-left: 100px;
+    margin-right: 0px;
+}
+
+.cuadro {
+    width: 90%;
+    height: auto;
+    background-color: rgb(57, 50, 43);
+    text-align: center;
+    padding-left: 20px;
+}
+
+.cuadro-header {
+    background-color: rgb(57, 50, 43);
+    padding: 10px;
+    text-align: left;
+    width: 70%;
+}
+
+.inicio-sesion-header {
+    margin: 0% 77%;
+    padding-top: 20PX;
+    width: 170px;
+    top: 10px;
+    right: 10px;
+    display: flex;
+}
+
+.sesion {
+    border: 1px solid white;
+    background: transparent;
+    color: white;
+    padding: 5px 10px;
+    margin-right: 10px;
+    text-decoration: none;
+}
+
+.registro {
+    background: rgb(130, 120, 120);
+    color: white;
+    padding: 5px 10px;
+    text-decoration: none;
+}
+
+.contenedor-imagen-header {
+    display: flex;
+    align-items: center;
+    vertical-align: baseline;
+}
+
+.titulo {
+    width: auto;
+    height: auto;
+    padding: 5px;
+}
+
+a.titulo {
+    vertical-align: baseline;
+}
+
+.titulo-header {
+    text-decoration: none;
+    color: white;
+}
+
+.titulo-header:hover {
+    color: rgb(150, 150, 150);
+}
+
+.container-header {
+    width: 100%;
+    height: auto;
+}
+
+.imagen-header {
+    float: center;
+    margin-right: 0px;
+    width: 175px;
+    height: auto;
+    margin: 0 0%;
+    margin-right: 25px;
+}
+
+.imagen-izquierda {
+    float: center;
+    width: 100%;
+    height: auto;
+}
+
+.nav-navegador {
+    list-style: none;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 10px;
+    display: flex;
+}
+
+.nav-navegador-horizontal {
+    margin-right: 25px;
+}
+
+.nav-navegador-horizontal span {
+    color: white;
+    font-size: 18px;
+    text-decoration: none;
+    padding: 10px;
+}
+
+.titulo-cuadro {
+    padding-bottom: 2%;
+}
+
+.centro-imagen {
+    width: 100%;
+    height: 25%;
+}
+
+.centro-imagen img {
+    width: 660px;
+    height: 210px;
+}
+
+.cuadro h1 {
+    color: white;
+}
+
+.bienvenida-cuadro {
+    border: 2px solid rgb(98, 64, 0);
+    background-color: rgb(62, 57, 53);
+    padding: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.bienvenida-welcome {
+    display: flex;
+    align-items: center;
+    margin-left: 100px;
+}
+
+.bienvenida-welcome h1 {
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+.welcome-texto {
+    font-size: 18px;
+    color: rgb(253, 234, 210);
+}
+
+.imagen-cuadro {
+    text-align: center;
+}
+
+.bienvenida-imagen {
+    overflow: hidden;
+}
+
+.gallery {
+    display: flex;
+    transition: transform 0s ease-in-out;
+}
+
+.slide {
+    min-width: 100%;
+}
+
+.slide img {
+    max-width: 100%;
+    height: auto;
+}
+
+.box-linea {
+    text-align: center;
+    font-size: 125%;
+}
+
+.comillas-table {
+    width: 20px;
+    font-size: 36px;
+    font-family: 'Times New Roman', serif;
+    font-weight: bold;
+    text-align: left;
+    padding: 3px;
+    vertical-align: top;
+}
+
+a.external.text {
+    text-decoration: none;
+    color: rgb(253, 234, 210);
+}
+
+.table-cuadro {
+    background-color: var(--theme-page-background-color);
+    border: 2px solid #000000;
+    margin: auto;
+    padding: 5px;
+    width: 100%;
+    flex-direction: column;
+}
+
+.table-titulo {
+    text-align: center;
+    font-size: 125%;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: white;
+    padding: 5px;
+}
+
+.table-texto {
+    color: white;
+    border-top: 2px solid black;
+    padding: 5px;
+}
+
+.box-cuadro {
+    background-color: var(--theme-page-background-color);
+    border: 2px solid #000000;
+    margin: auto;
+    padding: 5px;
+    width: 100%;
+}
+
+.box-titulo {
+    text-align: center;
+    font-size: 125%;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: white;
+}
+
+.box-texto {
+    color: white;
+    border-top: 2px solid black;
+    padding: 5px;
+}
+
+.box-texto p {
+    margin-bottom: 20px;
+}
+
+.box-video {
+    border-top: 2px solid black;
+    padding: 5px;
+}
+
+.box-video-cuadro {
+    padding-left: 0px;
+}
+
+.box-idioma {
+    color: rgb(125, 102, 72);
+    text-decoration: none;
+}
+
+.container-footermenu {
+    padding: 30px;
+}
+
+.limited-footermenu h1 {
+    color: white;
+    padding: 0px;
+    margin-top: 0px;
+    margin-bottom: 20px;
+}
+
+.mosaico-footermenu {
+    display: flex;
+}
+
+.columna-footer-menu {
+    flex: 1;
+    padding: 0px;
+    background-color: rgb(81, 71, 61);
+}
+
+.columna-page-menu {
+    position: relative;
+    height: 236px;
+    width: 262px;
+    margin-bottom: 10px;
+    border: 1px solid #917b66;
+}
+
+.columna-imagen-menu {
+    height: 236px;
+    width: 262px;
+    margin-bottom: 10px;
+    border: 1px solid #917b66;
+    overflow: hidden;
+    position: relative;
+}
+
+.imagen-menu-contenedor {
+    height: 236px;
+    width: 262px;
+}
+
+.texto-imagen {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.texto-imagen h2,
+.texto-imagen p {
+    margin: 0;
+    padding: 10px;
+}
+
+.imagen-menu-contenedor2:hover .texto-imagen {
+    opacity: 1;
+}
+
+.footer-menu {
+    background-color: rgb(81, 71, 61);
+    width: 100%;
+}
+
+.kenshi-wiki {
+    width: 222px;
+    height: 23px;
+    background-color: #7d7065;
+    color: white;
+    padding-inline: 20px;
+    padding-block: 20px;
+    font-size: 20px;
+}
+
+.lista-wiki {
+    background-color: #322d2a;
+    color: black;
+    margin: 0px;
+    padding: 0;
+    height: 173px;
+}
+
+.lista-wiki .wiki-list {
+    list-style: none;
+    border-bottom: 1px solid black;
+}
+
+.lista-wiki .wiki-article {
+    text-decoration: none;
+    display: block;
+    padding: 19px;
+}
+
+.lista-wiki .wiki-circule {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-color: gray;
+    color: white;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 20px;
+    margin-right: 10px;
+}
+
+.lista-wiki .wiki-tittle {
+    font-weight: bold;
+    color: white;
+}
+
+.cuadro-header h1 {
+    margin: 0;
+    color: white;
+}
+
+footer {
+    text-align: center;
+    color: white;
+    padding-top: 2%;
+    width: 100%;
+}
+
+.container-footer {
+    background-color: rgb(43, 0, 43);
+    width: 100%;
+    height: 100%;
+}
+
+.footer-copyright {
+    margin-left: 100px;
+    margin-right: 200px;
+    padding-top: 55px;
+    padding-bottom: 35px;
+    display: flex;
+}
+
+.explore-titulo {
+    text-align: left;
+    font-size: 14px;
+    width: 180px;
+}
+
+.imagen-fandom {
+    width: 180px;
+    height: 45px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li.explore-links {
+    padding-left: 0;
+    margin-bottom: 10px;
+}
+
+.explore-link {
+    text-decoration: none;
+    color: yellow;
+    padding: 5px 0;
+    display: block;
+    text-align: left;
+    font-size: 14px;
+}
+
+.explore-link:hover {
+    color: white;
+}
+
+.follow-titulo {
+    text-align: left;
+}
+
+.follow-links {
+    list-style: none;
+    padding: 0;
+    display: flex;
+}
+
+.icon-footer {
+    text-decoration: none;
+    display: block;
+    text-align: center;
+}
+
+.follow-iconos {
+    width: 40px;
+    height: 40px;
+}
+
+.icono-apps {
+    width: 100px;
+    height: 100px;
+}
+
+#contenerdor-advertise {
+    margin-top: 60px;
+}
+
+.copy {
+    width: 60%;
+    height: 20%;
+    margin-right: 20px;
+    margin-bottom: 0px;
+}
+
+#contenedor-fandom-apps {
+    text-align: left;
+}
+
+#contenedor-iconsfandom {
+    display: flex;
+    align-items: center;
+}
+
+.iconos {
+    display: flex;
+    align-items: center;
+}
+
+#contenedor-iconsfandom img {
+    width: 80px;
+    height: auto;
+    margin-right: 10px;
+}
+
+#contenedor-iconsfandom ul {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+}
+
+#contenedor-iconsfandom ul li {
+    margin-bottom: 0px;
+}
+
+#contenedor-iconsfandom ul li img {
+    width: 119px;
+    height: auto;
+}
+
+
+.div-izquierdo,
+.div-derecho {
+    width: 100%;
+    border: 1px solid gray;
+    background: rgb(0, 0, 0);
+}
